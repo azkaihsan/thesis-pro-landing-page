@@ -555,16 +555,7 @@ const Footer = () => {
   return (
     <footer className="bg-blue-950 text-white py-12 border-t border-blue-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center">
-          <div className="flex items-center gap-2">
-            <div className="bg-white/10 p-2 rounded-lg">
-              <FileText className="h-6 w-6 text-accent" />
-            </div>
-            <span className="font-bold text-xl">Thesis Pro</span>
-          </div>
-        </div>
-        
-        <div className="mt-8 text-center text-sm text-blue-400/60 pt-8 border-t border-blue-900/50">
+        <div className="text-center text-sm text-blue-400/60">
           <p>&copy; {new Date().getFullYear()} Thesis Pro. Dibuat dengan sepenuh hati untuk Pejuang Skripsi Indonesia.</p>
         </div>
       </div>
