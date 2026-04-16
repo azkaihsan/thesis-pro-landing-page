@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Thesis Pro Landing Page"
+version = "1.0.0"
+id = "artifacts/thesis-pro"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25535
+
+[services.development]
+run = "pnpm --filter @workspace/thesis-pro run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/thesis-pro", "run", "build" ]
+publicDir = "artifacts/thesis-pro/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25535"
+BASE_PATH = "/"
