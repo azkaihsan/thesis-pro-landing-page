@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "NyHHaV1MJYLkql1sUhsSa"
+uri = "file://artifacts/thesis-pro/README.md"
+type = "text"
+title = "Thesis Pro README.md"
