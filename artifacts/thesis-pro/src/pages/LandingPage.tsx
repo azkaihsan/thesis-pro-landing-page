@@ -555,19 +555,12 @@ const Footer = () => {
   return (
     <footer className="bg-blue-950 text-white py-12 border-t border-blue-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center gap-2 mb-6 md:mb-0">
+        <div className="flex justify-center">
+          <div className="flex items-center gap-2">
             <div className="bg-white/10 p-2 rounded-lg">
               <FileText className="h-6 w-6 text-accent" />
             </div>
             <span className="font-bold text-xl">Thesis Pro</span>
-          </div>
-          
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-blue-200">
-            <a href="#" className="hover:text-white transition">Tentang Kami</a>
-            <a href="#" className="hover:text-white transition">Syarat & Ketentuan</a>
-            <a href="#" className="hover:text-white transition">Kebijakan Privasi</a>
-            <a href="#" className="hover:text-white transition">Kontak</a>
           </div>
         </div>
         
